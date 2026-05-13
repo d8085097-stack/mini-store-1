@@ -9,7 +9,7 @@ export default function App() {
       title: "Атлас заметок", 
       price: 0, 
       free: true,
-      image: "https://images.unsplash.com/photo-1507842217343-583f7270bfba?w=400&h=300&fit=crop",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStA_G6nnjHivWse_fl2m0sWF67-2UHXZZ_qw&s",
       description: "Приложение для создания и организации заметок с картами и синхронизацией",
       rating: 4.8,
       downloads: "1.2M"
@@ -19,7 +19,7 @@ export default function App() {
       title: "Переводчик", 
       price: 0, 
       free: true,
-      image: "https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=400&h=300&fit=crop",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGF5LOhTxfoGVf536N3N2MJrXiVdPKfJkygw&s",
       description: "Мгновенный перевод текста на 100+ языков с поддержкой голоса",
       rating: 4.6,
       downloads: "5M"
@@ -49,7 +49,7 @@ export default function App() {
       title: "Почтовый клиент", 
       price: 4.99, 
       free: false,
-      image: "https://images.unsplash.com/photo-1563586348-c89f172d4c75?w=400&h=300&fit=crop",
+      image: "https://rskrf.ru/upload/iblock/41f/v3qad0nhzla6a4i60ixxkr2s0hao9p16.png",
       description: "Профессиональный почтовый клиент с поддержкой шифрования и фильтрами",
       rating: 4.9,
       downloads: "3.5M"
@@ -79,7 +79,7 @@ export default function App() {
       title: "Блокнот", 
       price: 0, 
       free: true,
-      image: "https://images.unsplash.com/photo-1488190211105-8692f7ce6c3f?w=400&h=300&fit=crop",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcZikQ3hIPRxpRdWn2ejSxmM8bCGV1vwdz5Q&s",
       description: "Простой и быстрый блокнот для повседневных заметок без лишних функций",
       rating: 4.4,
       downloads: "900K"
