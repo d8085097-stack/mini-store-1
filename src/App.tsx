@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
+import { AppCardType } from "./types";
 import "./styles.css";
 
 export default function App() {
-  const data = [
+  const data: AppCardType[] = [
     { 
       id: 1, 
       title: "Атлас заметок", 
@@ -85,10 +86,10 @@ export default function App() {
     },
   ];
 
-  const [searchText, setSearchText] = useState("");
-  const [filterFree, setFilterFree] = useState(false);
-  const [apps, setApps] = useState(data);
-  const [selectedApp, setSelectedApp] = useState(null);
+  const [searchText, setSearchText] = useState<string>("");
+  const [filterFree, setFilterFree] = useState<boolean>(false);
+  const [apps, setApps] = useState<AppCardType[]>(data);
+  const [selectedApp, setSelectedApp] = useState<AppCardType | null>(null);
 
   useEffect(() => {
     const filteredApps = data.filter((app) => {
@@ -101,22 +102,22 @@ export default function App() {
     setApps(filteredApps);
   }, [searchText, filterFree]);
 
-  const handleSearchInput = (event) => {
+  const handleSearchInput = (event: React.FormEvent<HTMLInputElement>): void => {
     const text = event.currentTarget.value;
     setSearchText(text);
   };
 
-  const handleCheckbox = (event) => {
+  const handleCheckbox = (event: React.ChangeEvent<HTMLInputElement>): void => {
     const isChecked = event.currentTarget.checked;
     setFilterFree(isChecked);
   };
 
-  const closeModal = () => {
+  const closeModal = (): void => {
     setSelectedApp(null);
   };
 
-  const handleModalClick = (e) => {
-    if (e.target.className === "modal") {
+  const handleModalClick = (e: React.MouseEvent<HTMLDivElement>): void => {
+    if ((e.target as HTMLElement).className === "modal") {
       closeModal();
     }
   };
