@@ -1,3 +1,4 @@
+
 export type AppCardType = {
   id: number;
   title: string;
@@ -8,3 +9,4 @@ export type AppCardType = {
   rating: number;
   downloads: string;
 };
+ 
