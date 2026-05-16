@@ -1,7 +1,7 @@
 import { AppCardType } from "./types";
 
-// Базовый URL API
-const API_BASE_URL = "https://ministore.ru/api";
+// Базовый URL API - локальный сервер
+const API_BASE_URL = "http://localhost:4000/api";
 
 // Интерфейс для параметров фильтра
 export interface FilterParams {
@@ -47,6 +47,8 @@ export async function getAppsWithFilters(filters: FilterParams): Promise<AppCard
   // Формируем полный URL с параметрами
   const url = `${API_BASE_URL}/apps?${params.toString()}`;
   
+  console.log('Fetching:', url); // Для отладки
+  
   const response = await fetch(url);
   
   if (!response.ok) {
@@ -62,6 +64,26 @@ export async function getAppsWithFilters(filters: FilterParams): Promise<AppCard
  */
 export async function getAppById(id: number): Promise<AppCardType> {
   const response = await fetch(`${API_BASE_URL}/apps/${id}`);
+  
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  
+  const data = await response.json();
+  return data;
+}
+
+/**
+ * Создать новое приложение (для практики POST запросов)
+ */
+export async function createApp(app: Omit<AppCardType, 'id'>): Promise<AppCardType> {
+  const response = await fetch(`${API_BASE_URL}/apps`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(app),
+  });
   
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
