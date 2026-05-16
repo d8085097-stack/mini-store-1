@@ -1,6 +1,7 @@
 // server.js
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
+
 const app = express();
 
 // Middleware
@@ -150,8 +151,9 @@ app.get('/api/categories', (req, res) => {
 
 // POST /api/apps - Добавить новое приложение (для демонстрации)
 app.post('/api/apps', (req, res) => {
+  const maxId = apps.length > 0 ? Math.max(...apps.map(a => a.id)) : 0;
   const newApp = {
-    id: apps.length + 1,
+    id: maxId + 1,
     ...req.body
   };
   apps.push(newApp);
