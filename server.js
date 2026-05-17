@@ -16,7 +16,7 @@ const apps = [
     price: 0, 
     free: true,
     category: "productivity",
-    image: "https://images.unsplash.com/photo-1507842217343-583f7270bfba?w=400&h=300&fit=crop",
+    image:"https://s10.iimage.su/s/17/g13KUVrxzeCktaLvmzrAaAToBATvlCY0IrBg4I0Ub.png",
     description: "Приложение для создания и организации заметок с картами и синхронизацией",
     rating: 4.8,
     downloads: "1.2M"
@@ -27,7 +27,7 @@ const apps = [
     price: 0, 
     free: true,
     category: "productivity",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f70d504f0?w=400&h=300&fit=crop",
+    image:"https://s10.iimage.su/s/17/gpEfVoNxZy13PCv2jovzFRg9i12bZkfHwjIiZDqAM.png",
     description: "Мгновенный перевод текста на 100+ языков с поддержкой голоса",
     rating: 4.6,
     downloads: "5M"
@@ -60,7 +60,7 @@ const apps = [
     price: 4.99, 
     free: false,
     category: "productivity",
-    image: "https://images.unsplash.com/photo-1563586348-c89f172d4c75?w=400&h=300&fit=crop",
+    image:"https://s10.iimage.su/s/17/gQcDC4vxMZhgbjgyVqEep7L08XS0CgkHlof1nZGjO.png",
     description: "Профессиональный почтовый клиент с поддержкой шифрования и фильтрами",
     rating: 4.9,
     downloads: "3.5M"
@@ -93,7 +93,7 @@ const apps = [
     price: 0, 
     free: true,
     category: "productivity",
-    image: "https://images.unsplash.com/photo-1488190211105-8692f7ce6c3f?w=400&h=300&fit=crop",
+    image: "https://s10.iimage.su/s/17/gmNneqaxEiWNLOC9yOqCNs9eGz5XfNhQ3c8QiLeNM.png",
     description: "Простой и быстрый блокнот для повседневных заметок без лишних функций",
     rating: 4.4,
     downloads: "900K"
