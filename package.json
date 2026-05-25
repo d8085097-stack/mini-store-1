@@ -13,6 +13,7 @@
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^4.22.2",
+    "jsonwebtoken": "^9.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
