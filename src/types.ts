@@ -1,12 +1,20 @@
-
-export type AppCardType = {
+// Типы для магазина кофе
+export type CoffeeCardType = {
   id: number;
-  title: string;
+  name: string;
   price: number;
-  free: boolean;
+  inStock: boolean;
   image: string;
   description: string;
   rating: number;
-  downloads: string;
+  roastLevel: 'light' | 'medium' | 'dark';
+  origin: string;
+  flavor: string;
 };
- 
+
+export interface CoffeeFilterParams {
+  search?: string;
+  inStock?: boolean;
+  roastLevel?: 'light' | 'medium' | 'dark';
+  origin?: string;
+}
